@@ -7,7 +7,7 @@ package ragonba3.practiceprogramming.com.sg.foundations.basics;
 
 /**
  *
- * @author xolot
+ * @author ragonba3
  */
 public class AllTheMaths {
     public static void main(String[] args) {
