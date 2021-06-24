@@ -7,7 +7,7 @@ package com.sg.foundations.variables;
 
 /**
  *
- * @author xolot
+ * @author ragonba3
  */
 public class MoreBucketsMoreFun {
     
@@ -28,6 +28,8 @@ public class MoreBucketsMoreFun {
         butterflies--;
         System.out.println("Now there are only " + butterflies + " butterflies left.");
         System.out.println("But there are still " + bugs + " bugs left...");
+        //The bugs  should be reduced of one, so that it may be reflected in the result
+        
         System.out.println("Wait a minute!");
         System.out.println("... maybe my computer can't do math, after all!");
     }
