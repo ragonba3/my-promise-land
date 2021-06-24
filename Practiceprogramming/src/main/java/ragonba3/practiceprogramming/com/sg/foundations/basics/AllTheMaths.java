@@ -38,7 +38,7 @@ public class AllTheMaths {
         System.out.println(44 - 22 + 11 - 66 - 88 + 76 - 11 - 33);
         
         System.out.print("22 times 3 minus 1 plus 4 times 6 minus -9 is : ");
-        System.out.println((22 * 3) - 1 + 4 * 6  - 9);
+        System.out.println((22 * 3) - 1 + (4 * 6 ) - - 9);
         
         System.out.print("Is 67 greater than 4 * 5? ");
         System.out.println(67 > (4 * 5));
