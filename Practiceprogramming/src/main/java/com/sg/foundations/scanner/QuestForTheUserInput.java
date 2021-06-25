@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author xolot
+ * @author ragonba3
  */
 public class QuestForTheUserInput {
     

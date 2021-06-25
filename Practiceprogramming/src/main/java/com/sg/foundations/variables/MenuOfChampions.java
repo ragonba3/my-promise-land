@@ -32,7 +32,7 @@ public static void main(String[] args) {
     beverage = "$1.50";
     
     System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-    System.out.println("Welcom to  " + name );
+    System.out.println("Welcome to  " + name );
     System.out.println("" + greetings );
     System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
     

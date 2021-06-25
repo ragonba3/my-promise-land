@@ -7,7 +7,7 @@ package com.sg.foundations.variables;
 
 /**
  *
- * @author xolot
+ * @author ragonba3
  */
 public class BestAddeEver {
     
