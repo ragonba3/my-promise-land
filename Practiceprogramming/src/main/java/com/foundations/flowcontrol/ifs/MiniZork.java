@@ -28,13 +28,13 @@ public class MiniZork {
         if (action.equals("open the mailbox")){
         System.out.println("You open the mailbox.");
         System.out.println("It's really dark in there.");
-        System.out.println("Look inside or stick you hand in?  ");
+        System.out.println("Look inside or stick your hand in ");
         action = userInput.nextLine();}
         
         if (action.equals("look inside")){
             System.out.println("You peer inside the mailbox.");
             System.out.println("It's rally very dark. So ... so very dark.");
-            System.out.println("Run away or keep looking? ");
+            System.out.println("run away or keep looking");
             action = userInput.nextLine();}
             
             if (action.equals("keep looking")){
@@ -45,8 +45,11 @@ public class MiniZork {
                 
                 System.out.println("But you alive. Possibly a wise choice");}
             
-            else if (action.equals ("stick your hand in")){}
-            else if (action.equals("go to the house")){}}
+            else if (action.equals ("stick your hand in")){
+                System.out.println(" Your hand was eaten by grue!!");
+            }
+            else if (action.equals("go to the house")){
+                System.out.println("Have a peacefull evening");}}
               
         }
         
