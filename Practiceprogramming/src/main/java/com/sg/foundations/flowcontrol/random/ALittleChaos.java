@@ -6,6 +6,10 @@
 package com.sg.foundations.flowcontrol.random;
 
 import java.util.Random;
+/* change it to randomizer.next (32) +35
+after I tried randomizer.next (65) and worked!!
+use 64 for Lotto ;-)
+*/
 
 /**
  *
@@ -34,7 +38,7 @@ public class ALittleChaos {
         System.out.print(randomizer.nextInt(65) + ",");
         System.out.print(randomizer.nextInt(65) + ",");
         System.out.print(randomizer.nextInt(65) +",");
-        System.out.println(randomizer.nextInt(65));
+        System.out.println(randomizer.nextInt(32) +35 );
         
         
         
