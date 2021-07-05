@@ -11,4 +11,17 @@ package com.sg.foundations.flowcontrol.whiles;
  */
 public class LazyTeenager {
     
-}
+    public static void main(String[] args) {
+                
+        int cleanYourRm = 1;
+        int wontCleanRm = 7;        
+       while (cleanYourRm < wontCleanRm){
+        System.out.println("Clean your room!!" + (cleanYourRm) +"");
+        System.out.println("I'll clean it soon...");
+        cleanYourRm ++;
+       }
+           System.out.println("" + (cleanYourRm) + "");
+           System.out.println(" Sorry no more XBOX!!");
+    }}
+    
+

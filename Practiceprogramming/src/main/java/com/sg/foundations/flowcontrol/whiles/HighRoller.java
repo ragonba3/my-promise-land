@@ -16,7 +16,7 @@ public class HighRoller {
         
         Random diceRoller = new Random();
         
-        int rollResult = diceRoller.nextInt(8) +1;
+        int rollResult = diceRoller.nextInt(6) +1;
         
         System.out.println("TIME TO ROOOOLL THE DICE");
         System.out.println("I rolled a " + rollResult);
