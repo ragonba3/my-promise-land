@@ -1,3 +1,5 @@
+package com.sg.foundations.flowcontrol.arrays;
+
 
 import java.util.Scanner;
 
@@ -16,32 +18,34 @@ public class CompoundInt {
     public static void main(String[] args) {
         
     
-     // create an object of Scanner class
-    Scanner userInput = new Scanner(System.in);
-
-    // take input from users
     
-    System.out.println("Enter the principal: ");
+    Scanner userInput = new Scanner(System.in);
+    
+    System.out.println("How much you want to invest?: ");
     double principal = userInput.nextDouble();
 
     
-    System.out.println("Enter the rate: ");
+    System.out.println("What is the aual rate?: ");
     double rate = userInput.nextDouble();
 
-    System.out.println("Enter the time: ");
+    System.out.println("How many years are investing? : ");
     double time = userInput.nextDouble();
 
-    System.out.println("Enter number of times interest is compounded: ");
+    System.out.println("The annual rate : ");
     int number = userInput.nextInt();
 
     double interest = principal * (Math.pow((1 + rate/100), (time * number))) - principal;
+    
+    double cinterest= principal + interest;
+    
+    System.out.println("Began with $: " + principal);
+    System.out.println("Interest earned $: " + interest);
+   // System.out.println("Time Duration in years: " + time);
+   // System.out.println("Number of Time interest Compounded: " + number);
+    
+    System.out.println("Ended the year with $: " + cinterest );
 
-    System.out.println("Principal: " + principal);
-    System.out.println("Interest Rate: " + rate);
-    System.out.println("Time Duration: " + time);
-    System.out.println("Number of Time interest Compounded: " + number);
-    System.out.println("Compound Interest : " + interest);
-
+    
     
   }
 }
