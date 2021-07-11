@@ -22,7 +22,7 @@ public class Factorizer {
 
         for (i = 1; i <= Number; i++) {
             if (Number % i == 0) {
-                System.out.format("Factors of : " + "%d ",  Number );
+                System.out.format("Factors of : " + "%d .",  Number );
                 
                 
         for (i = 1; i < Number; i++) {
