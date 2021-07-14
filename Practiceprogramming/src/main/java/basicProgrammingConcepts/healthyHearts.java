@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.sg.foundations.flowcontrol.arrays;
+package basicProgrammingConcepts;
 
 /**
  *
  * @author xolot
  */
-public class RocaPapelTijeras {
+public class healthyHearts {
     
 }
