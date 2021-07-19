@@ -13,9 +13,11 @@ import java.util.Scanner;
  */
 public class healthyHearts {
     
+    @SuppressWarnings("SuspiciousIndentAfterControlStatement")
     public static void main(String args[]) {
         
-        double hrr,min,max,maxHr;
+        double hrr,min,max,maxHr,MaximunHrate = 0;
+        
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your age");
         int age=sc.nextInt();
@@ -28,24 +30,31 @@ public class healthyHearts {
         
         
         if(age>50){
+            MaximunHrate = (200-age);
             maxHr=220 -(0.50*age);
             hrr=(maxHr-rhr);
             min=(hrr*(minPer/100))+rhr;
             max=(hrr*(maxPer/100))+rhr;
+            
             System.out.println("Target Heart Rate zone is between "+min+" to " +max+" beats per minute");
         }
         else
-            if(age>85){
+            if(age<85){
+                MaximunHrate = (200-age);
                 maxHr=220-(0.85*age);
                 hrr=(maxHr-rhr);
                 min=hrr*(minPer/100)+rhr;
                 max=hrr*(maxPer/100)+rhr;
-                System.out.println("Target Heart Rate zone is beween " +min+" to " +max);    
-        }
+                System.out.println("Target heart rate zone is beween " +min+" to " +max);    
+                
+            }
+            System.out.println("Maximun heart rate should be : " +MaximunHrate+ " beats per minute");   
+            
+        
+    }
             
         
         
         
     }
     
-}

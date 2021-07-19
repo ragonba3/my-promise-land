@@ -28,8 +28,8 @@ public class RocaPapelTijeras {
                     }
             System.out.println(" The computer has made its choice");
             return computerWordChoice;
-        }
-            public static void showMenu( ){
+            
+            public static showMenu( ){
                 System.out.println("Options to choose from\n1. rock\n2. paper\n3.scissors");
             }
             
@@ -101,7 +101,7 @@ public class RocaPapelTijeras {
                 System.out.println("You chose " + userChoice + "\nComputer chose: " + computerChoice);
                 System.out.println(winner);
                 
-                while( winner.equals("No Player won")){
+                while( winner.equals("No Player won"))
                 System.out.println("You both chose same thing, Please play again.");
                  showMenu();
                   computerChoice = generateComputerChoice(random);
@@ -112,7 +112,8 @@ public class RocaPapelTijeras {
                           
                 }
               }
-}    
+    
+
 
                   
                 
