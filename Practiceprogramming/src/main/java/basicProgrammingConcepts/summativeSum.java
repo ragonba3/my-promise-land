@@ -26,10 +26,10 @@ public class summativeSum {
     
     printSum += array[i][j];
         
-    public static void (printSum)  {
+    
         System.out.println("Array  # " + i +" sum = " +printSum );
         System.out.println();
-    }
+    
     
         
     }

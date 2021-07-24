@@ -25,12 +25,11 @@ public class RockPaperScissors {
         int wins = 0;
         int losses = 0;
         int choice = 0;
-
+        
         Scanner myScanner = new Scanner(System.in);
 
         Random randomizer = new Random();
-        //int randNum = randomizer.nextInt(2);
-
+        
         System.out.println("Want to rumble with me?");
         System.out.println("Rock, Paper or Scissors!!!");
         System.out.println("How many rounds do you want to play?");
@@ -48,7 +47,7 @@ public class RockPaperScissors {
 
         for (int i = 0; i < numRounds && i < 11; i++) {
 
-            int randNum = randomizer.nextInt(2);
+            int randNum = randomizer.nextInt(3);
 
             System.out.println("So what's is gonna be...? choose rock, paper, or scissors?");
             stringChoice = myScanner.nextLine();
@@ -60,13 +59,13 @@ public class RockPaperScissors {
                     ties++;
 
                 } else if (randNum == paper) {
-                    losses++;
-
-                } else if (randNum == scissors) {
                     wins++;
-                }
                 
-                        chooseWinner(wins, losses);
+                } else if (randNum == scissors) {
+                    losses++;
+                
+                }
+                     chooseWinner(wins, losses);
                         
 
             } else if (stringChoice.equalsIgnoreCase("Paper")) {
@@ -76,10 +75,12 @@ public class RockPaperScissors {
                     ties++;
 
                 } else if (randNum == scissors) {
-                    losses++;
+                    wins++;
+                   
 
                 } else if (randNum == rock) {
                     wins++;
+                  
                 }
                 
                         chooseWinner(wins, losses);
@@ -93,9 +94,11 @@ public class RockPaperScissors {
 
                 } else if (randNum == rock) {
                     losses++;
+                    
 
-                } else if (randNum == scissors) {
-                    wins++;
+                } else if (randNum == paper) {
+                    losses++;
+                    
                 } 
                 
                      chooseWinner(wins, losses);
