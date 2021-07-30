@@ -7,7 +7,7 @@ package AirPlaneTraffic;
 
 /**
  *
- * @author xolot
+ * @author ragoba3
  */
 public class Runaway {
     

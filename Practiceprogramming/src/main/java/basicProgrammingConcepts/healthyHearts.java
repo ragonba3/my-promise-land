@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class healthyHearts {
     
-    @SuppressWarnings("SuspiciousIndentAfterControlStatement")
+    
     public static void main(String args[]) {
         
         double hrr,min,max,maxHr,MaximunHrate = 0;

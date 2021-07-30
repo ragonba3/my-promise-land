@@ -28,7 +28,7 @@ public class RocaPapelTijeras {
                     }
             System.out.println(" The computer has made its choice");
             return computerWordChoice;
-            
+        }
             public static void showMenu( ){
                 System.out.println("Options to choose from\n1. rock\n2. paper\n3.scissors");
             }

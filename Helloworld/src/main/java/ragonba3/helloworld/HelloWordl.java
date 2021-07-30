@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AirPlaneTraffic;
+package ragonba3.helloworld;
 
 /**
  *
- * @author ragonba3
+ * @author xolot
  */
-class Gate1 {
+class HelloWordl {
     
 }
