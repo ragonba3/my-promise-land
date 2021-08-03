@@ -33,19 +33,27 @@ public class App {
       selection=sc.nextInt();
     }  
         SimpleCalculator SimpleCalculator = new SimpleCalculator();
-        if(selection==1){
-            c=SimpleCalculator.add(a, b);
-            System.out.println("Your answer is: "+c);
-        }else if(selection==2){
-            c=SimpleCalculator.sub(a, b);
-            System.out.println("Your answer is: "+c);
-        }else if(selection==3){
-            c=SimpleCalculator.div(a, b);
-            System.out.println("Your answer is: "+c);
-        }else if(selection==4){
-            c=SimpleCalculator.multi(a, b);
-            System.out.println("Your answer is: "+c);
-                }   
+        switch (selection) {
+            case 1:
+                c=SimpleCalculator.add(a, b);
+                System.out.println("Your answer is: "+c);
+                break;
+            case 2:
+                c=SimpleCalculator.sub(a, b);
+                System.out.println("Your answer is: "+c);
+                break;
+            case 3:
+                c=SimpleCalculator.div(a, b);
+                System.out.println("Your answer is: "+c);
+                
+                break;   
+            case 4:
+                c=SimpleCalculator.multi(a, b);
+                System.out.println("Your answer is: "+c);
+                break;
+            default:
+                break;
+        }
             System.out.println("Press 0 to exit ");
             sc.nextInt();
         while(selection ==0){}
