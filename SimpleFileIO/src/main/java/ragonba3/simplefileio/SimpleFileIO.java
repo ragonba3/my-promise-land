@@ -26,7 +26,7 @@ public class SimpleFileIO {
         out.flush();
         out.close();
         
-        Scanner sc = new Scanner( new BufferedReader(new FileReader("OutFile.txt ")));
+        Scanner sc = new Scanner( new BufferedReader(new FileReader("outFile.txt ")));
         
         while (sc.hasNext()){
             String currentLine =sc.nextLine();
