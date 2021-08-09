@@ -1,3 +1,5 @@
+package ragonba3.statecapitals;
+
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -22,7 +24,6 @@ public class StateCapitals {
     
    
 			stateCapitals.put("Alabama", "Montgomery");
-                        
                         stateCapitals.put("Alaska", "Juneau");
                         stateCapitals.put("Arizona", "Phoenix");
                         stateCapitals.put("Arkansas", "Little Rock");
@@ -76,11 +77,11 @@ public class StateCapitals {
                         
                         
                         Set<String> keys = stateCapitals.keySet();
-                        for (String k : keys){
+                        for(String k : keys){
                             System.out.println("States and Capitals Pairs: "+k+", "+stateCapitals.get(k));}
                         
                         Set <String> keys = stateCapitals.keySet()
-                        for (String k : keys){        
+                        for(String k : keys){        
                         System.out.println("State: "+k);}
                        
                         

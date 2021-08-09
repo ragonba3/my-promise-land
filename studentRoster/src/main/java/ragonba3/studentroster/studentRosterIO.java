@@ -18,12 +18,13 @@ import java.util.Scanner;
 public class studentRosterIO {
     
     public static void main(String[] args)throws Exception {
-        try (PrintWriter out = new PrintWriter(new FileWriter("studenRoster.txt"))) {
-            out.println("0001::John::Doe::Java-August 2014");
-            out.println("002::Sally::Smith::Java-April 2014");
-            out.println("003::Jonh::Jones::.Net-Han 2014");
-            out.flush();
-        }
+        PrintWriter out = new PrintWriter(new FileWriter("studenRoster.txt"));
+        
+        out.println("0001::John::Doe::Java-August 2014");
+        out.println("0002::Sally::Smith::Java-April 2014");
+        out.println("0003::Jonh::Jones::.Net-Han 2014");
+        out.flush();
+        out.close();
         
         Scanner sc = new Scanner( new BufferedReader(new FileReader("studentRoster.txt ")));
     
