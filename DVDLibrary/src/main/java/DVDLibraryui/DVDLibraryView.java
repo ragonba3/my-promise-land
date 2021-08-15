@@ -15,11 +15,14 @@ import DVDLibrarydao.DVDLibraryDao;
  */
 public class DVDLibraryView {
     
-    private UserIO io = new UserIOConsoleImpl();
+    private UserIO io;
     private DVDLibraryView view = new DVDLibraryView();
-    private final DVDLibraryDao dao = DVDLibraryDaoFileImpl();
+    private DVDLibraryDao dao = DVDLibraryDaoFileImpl();
+    private UserIO io = UserIOConsoleImpl();
         
-    
+    public DVDLibraryView(userIO io){
+        this.io;
+    }
     
     public void displayCreateDVDBanner()   {
         io.print("***Create DVD ***");
@@ -122,6 +125,7 @@ public class DVDLibraryView {
     public void displayUnknownCommandBanner(){
         io.print("Unknown Command");
     }
+    
     }
     
 

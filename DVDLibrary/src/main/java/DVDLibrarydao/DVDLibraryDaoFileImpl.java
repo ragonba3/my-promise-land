@@ -22,6 +22,46 @@ public class DVDLibraryDaoFileImpl implements  DVDLibraryDao{
     public void setDvds(Map<String, DVD> Dvds) {
         this.Dvds = Dvds;
     }
+    public static final String DVD_FILE = "DVD.txt";
+    public static final String DELIMETER = "::";
+    
+    private DVD unmarshallDVD(String dvdAsText){
+        
+        String[] dvdTokens = dvdAsText.split(DELIMETER);
+        String dvdId = dvdTokens[0];
+        DVD dvdFromFile = new DVD(dvdId);
+        dvdFromFile.getDVDId(dvdTokens[1]);
+        dvdFromFile.getDVDTitle(dvdTokens[2]);
+        dvdFromFile.getDVDReleaseDate(dvdTokens[3]);
+        return dvdFromFile;     
+      }
+    private void loadDVD() throws ClassDVDLibraryDaoException {
+        Scanner scanner;
+        
+        try{
+            scanner = new Scanner(new BufferedReader(new FileReader(ROSTER_FILE)));
+        }
+        Catch (FileNotFoundException e){
+        throw new DVDLibraryDaoException("-_-Could not load DVD inti memory.", e);
+        }
+        String currentLine;
+        DVD currentDVD;
+        
+        while (scanner.hasNextLine()) {
+            currenteLine = scanner.nextLIne();
+            currentDVD = unmarshallDVD(currentLine);
+            dvds.put(currentDVD.getDVDId(),currentDVD);
+        }
+        scanner.close();
+        private String marshallDVD(DVD aDVD){
+            String dvdAsText = aDVD.getDVDId()+ DELIMETER;
+            dvdAsText += aDVD.getDVDTitle()+ DELIMETER;
+            dvdAsText += aDVD.getDVDReleaseDate() + DELIMETER;
+            dvdAsTest += aDVD.getDVDRate();
+            return dvdAsText;
+        }
+    }
+    
 
     @Override
     public DVD addDVD(String DvdId, DVD Dvd) {

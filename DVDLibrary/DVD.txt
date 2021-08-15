@@ -1,0 +1,11 @@
+Dvd[] dvds = {
+new Dvd(0,::The Lion King::June 24, 1994:: G :: Roger Allers, Rob Minkoff:: Walt Disney Pictures),
+new Dvd(1, :: Cinderella::March 4, 1950::G::Clyde Geronimi, Wilfred Jackson::Walt Disney Pictures),
+new Dvd(2, "Dumbo", "October 31, 1941", "G", "Samuel Armstrong, Norman Ferguson", "Walt Disney Pictures"),
+new Dvd(3, "Pinocchio", "February 23, 1940", "G", "Norman Ferguson, T. Hee", "Walt Disney Pictures"),
+new Dvd(4, "Finding Nemo", "May 30, 2003", "G", "Andrew Stanton, Lee Unkrich", "Walt Disney Pictures"),
+new Dvd(5, "Snow White and the Seven Dwarfs", "February 4, 1937", "G", "William Cottrell, David Hand", "Walt Disney Pictures"),
+new Dvd(6, "Aladdin", "November 25, 1992", "G", "Ron Clements, John Musker", "Walt Disney Pictures"),
+new Dvd(7, "Mary Poppins", "September 11, 1964", "G", "Robert Stevenson", "Walt Disney Pictures"),
+new Dvd(8, "Robin Hood", "December 6, 1973", "G", "Wolfgang Reitherman", "Walt Disney Pictures"),
+new Dvd(9, "Chicken Little", "November 4, 2005", "G", "Mark Dindal", "Walt Disney Pictures")};

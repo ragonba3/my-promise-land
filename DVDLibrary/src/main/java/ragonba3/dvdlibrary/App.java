@@ -13,7 +13,10 @@ import DVDLibraryController.DVDLibraryController;
  */
 public class App {
     public static void main(String[] args) {
-        DVDLibraryController controller = new DVDLibraryController();
+        UserIO myIo =new userIOConsoleImpl();
+        DVDLibraryView myView = new DVDLibraryView(myIO);
+        DVDLIbraryDao myDao = new DVDLibraryDaoFileImpl();
+        DVDLibraryController controller = new DVDLibraryController(myDao, myView);
         controller.run();
     }
     

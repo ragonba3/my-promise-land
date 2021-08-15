@@ -19,10 +19,16 @@ import java.util.List;
  */
 public class DVDLibraryController {
     
-    private DVDLibraryView view = new DVDLibraryView();
-    private DVDLibraryDao dao = new DVDLibraryDaoFileImpl();
+    private DVDLibraryView view;
+    private DVDLibraryDao dao;
     private UserIO io = new UserIOConsoleImpl();
+    private DVDLibraryDao dao = new DVDLibraryDaoFileImp();
 
+    public DVDLibraryController(DVDLibraryDao dao, DVDLibraryView view){
+        this.dao = dao;
+        this.view;
+    }
+    
     public DVDLibraryController() {
         this.view = new DVDLibraryView();
     }
@@ -100,6 +106,7 @@ public class DVDLibraryController {
     private void exitMessage(){
         view.displayExitBanner();
     }
+    
 }
 
 
