@@ -32,7 +32,7 @@ public class stateCapitals2 {
 
     Collection<String> keys = stateCapitals2.values();
     for (String CurrentState : stateCapitals2values){
-        System.out.println("50 States and Capitals are loaded: "+", "+CurrentState)}    
+        System.out.println("50 States : "+keys", "+CurrentState)}    
 
 }
 }
